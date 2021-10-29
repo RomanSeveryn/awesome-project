@@ -1,11 +1,13 @@
-import './App.css';
 import UserCard from './components/user-card/UserCard';
+import ListUser from './components/list-user/ListUser';
+import MainPage from './pages/main-page/MainPage';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <UserCard name='Name' surName='SurName' phrase='lucky man'/>
+    <div className="app-container">
+      <header className="">
+        <MainPage/>
       </header>
     </div>
   );
