@@ -34,7 +34,7 @@ const ListUser = () => {
   return (
     <div className='listContainer'>
       {users.map(user => (
-        <UserCard name={user.name} surName={user.username} phrase={user.company.catchPhrase}/>
+        <UserCard name={user.name} surName={user.username} key={user.id} phrase={user.company.catchPhrase}/>
       ))}
     </div>
   );
