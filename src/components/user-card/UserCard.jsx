@@ -6,7 +6,7 @@ import './style.css'
 const UserCard = props => {
   return (
     <div className='container'>
-        <img className='header' src={headerCard} />
+        <img className='card-header' src={headerCard} />
       <div className=''>
         <img className='img' src={photoUser} alt='user image' />
       </div>
