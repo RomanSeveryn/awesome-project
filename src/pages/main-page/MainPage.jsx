@@ -1,12 +1,7 @@
-import React from 'react';
-import ListUser from '../../components/list-user/ListUser';
+import React from 'react'
 
-const MainPage = () => {
-  return (
-    <div>
-        <ListUser/>
-    </div>
-  );
+const Mainpage = () => {
+  return <div></div>
 }
 
-export default MainPage;
+export default Mainpage
