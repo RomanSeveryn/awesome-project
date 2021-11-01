@@ -1,4 +1,5 @@
 import { getUsers } from '../../service/api'
+import { store } from '../../store';
 import { ActionTypes } from './action-types';
 
 const startLoading = () => ({ type: ActionTypes.START_LOADING })
