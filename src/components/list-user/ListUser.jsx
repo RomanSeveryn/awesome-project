@@ -1,14 +1,15 @@
 import React from 'react';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import UserCard from '../user-card/UserCard';
 import  './style.css'
 import { loadUsers } from '../../store/users/action';
 
 
 const ListUser = () => {
-
-  const [users, setUsers] = React.useState([])
+  const users = useSelector(state => state.users)
+  console.log('users', users);
+  // const [users, setUsers] = React.useState([])
   const dispatch = useDispatch()
 
   // const response = () => {
@@ -24,9 +25,9 @@ const ListUser = () => {
  
   console.log('loadUsers', loadUsers())
 
-  React.useEffect(async() => {
+  React.useEffect(() => {
     // response()
-    await dispatch(loadUsers())
+      dispatch(loadUsers())
   }, [])
 
   
