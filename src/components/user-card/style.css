@@ -1,0 +1,43 @@
+.container {
+  width: 180px;
+  height: 270px;
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+  border-radius: 10px
+}
+
+.img {
+  --photo-size: 80px;
+  width: var(--photo-size);
+  height: var(--photo-size);
+  margin-top: calc(var(--photo-size) / 2 * -1);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.phrase {
+  font-size: 11px;
+  padding: 0 7px 0 7px;
+  text-align: center;
+}
+
+.surname {
+  display: flex;
+  justify-content: center;
+}

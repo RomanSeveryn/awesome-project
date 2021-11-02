@@ -1,0 +1,7 @@
+.listContainer {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
