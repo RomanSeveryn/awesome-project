@@ -1,27 +1,22 @@
-import UserCard from './components/user-card/UserCard'
-import ListUser from './components/list-user/ListUser'
+import React from 'react'
 import MainPage from './pages/main-page/MainPage'
-import FriendsPage from './pages/friends-page/FriendsPage'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import './App.css'
 import Header from './components/header/Header'
+import './App.css'
+const FriendsPage = React.lazy(() => import('./pages/friends-page/FriendsPage'))
 
 function App () {
   return (
     <div className='app-container'>
-      
-
       <BrowserRouter>
-      <Header/>
-        <Switch>
-          <Route exact path='/'>
-            <MainPage/>
-          </Route>
-          <Route path='/mynetwork'>
-            <FriendsPage />
-          </Route>
-          <Route></Route>
-        </Switch>
+        <Header />
+        <React.Suspense fallback={<div>Загрузка...</div>}>
+          <Switch>
+            <Route exact path='/' component={MainPage} />
+            <Route path='/mynetwork' component={FriendsPage} />
+            <Route></Route>
+          </Switch>
+        </React.Suspense>
       </BrowserRouter>
     </div>
   )

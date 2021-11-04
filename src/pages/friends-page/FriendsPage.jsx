@@ -3,9 +3,7 @@ import ListUser from '../../components/list-user/ListUser'
 
 const FriendsPage = () => {
   return (
-    <div>
       <ListUser />
-    </div>
   )
 }
 
