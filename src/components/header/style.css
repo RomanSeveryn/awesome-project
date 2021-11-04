@@ -13,6 +13,7 @@
   min-height: 54px;
   position: fixed;
   background-color: antiquewhite;
+  z-index: 1;
 }
 
 .nav-list {
