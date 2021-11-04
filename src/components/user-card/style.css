@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   width: 180px;
   height: 270px;
   display: flex;
@@ -40,4 +41,15 @@
 .surname {
   display: flex;
   justify-content: center;
+}
+
+.deleteButton {
+  position: absolute;
+  background: rgba(0,0,0, .5);
+  color: white;
+  top: 8px;
+  right: 8px;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
 }

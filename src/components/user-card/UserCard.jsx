@@ -6,6 +6,7 @@ import './style.css'
 const UserCard = props => {
   return (
     <div className='container'>
+        <button className='deleteButton'>X</button>
         <img className='card-header' src={headerCard} />
       <div className=''>
         <img className='img' src={photoUser} alt='user image' />
