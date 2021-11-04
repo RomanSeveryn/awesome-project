@@ -1,10 +1,9 @@
+import React from 'react'
 import MainPage from './pages/main-page/MainPage'
-import FriendsPage from './pages/friends-page/FriendsPage'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Header from './components/header/Header'
 import './App.css'
-import React from 'react'
-const FriendsPage1 = React.lazy(() => import('./pages/friends-page/FriendsPage'))
+const FriendsPage = React.lazy(() => import('./pages/friends-page/FriendsPage'))
 
 function App () {
   return (
@@ -13,7 +12,7 @@ function App () {
         <React.Suspense fallback={<div>Загрузка...</div>}>
         <Switch>
           <Route exact path='/' component={MainPage}/>
-          <Route path='/mynetwork' component={FriendsPage1}/>
+          <Route path='/mynetwork' component={FriendsPage}/>
           <Route></Route>
         </Switch>
         </React.Suspense>

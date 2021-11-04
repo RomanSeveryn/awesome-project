@@ -1,9 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import UserCard from '../user-card/UserCard';
-import  './style.css'
 import { loadUsers } from '../../store/users/action';
+import  './style.css'
 
 
 const ListUser = () => {

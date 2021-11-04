@@ -7,9 +7,9 @@ const UserCard = props => {
   return (
     <div className='container'>
         <button className='deleteButton'>X</button>
-        <img className='card-header' src={headerCard} />
+        <img className='card-header' src={headerCard} alt='background card'/>
       <div className=''>
-        <img className='img' src={photoUser} alt='user image' />
+        <img className='img' src={photoUser} alt='user' />
       </div>
       <div className='name'>
         <h4 className=''>{props.name}</h4>

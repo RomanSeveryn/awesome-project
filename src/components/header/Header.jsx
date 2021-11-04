@@ -16,8 +16,8 @@ const Header = () => {
         <div className='wrapper-header'>
           <div className='container-header-input'>
             <div className='link-linkedin'>
-              <Link>
-                <img src={linkedinIcon} />
+              <Link to='/'>
+                <img src={linkedinIcon} alt='icon logo'/>
               </Link>
             </div>
 
@@ -29,7 +29,7 @@ const Header = () => {
             <li className='header-link'>
               <NavLink exact to='/' activeClassName={'active'}>
                 <div className='wrapper-link'>
-                  <img className='image-header' src={homeIcon} />
+                  <img className='image-header' src={homeIcon} alt='icon home' />
                   <span className='name-link'>Главная</span>
                 </div>
               </NavLink>
@@ -37,7 +37,7 @@ const Header = () => {
             <li className='header-link'>
               <NavLink to='/mynetwork' activeClassName={'active'}>
                 <div className='wrapper-link'>
-                  <img className='image-header' src={friendsIcon} />
+                  <img className='image-header' src={friendsIcon} alt='icon friends'/>
                   <span className='name-link'>Сеть</span>
                 </div>
               </NavLink>
@@ -45,7 +45,7 @@ const Header = () => {
             <li className='header-link'>
               <NavLink to='/vacancies' activeClassName={'active'}>
                 <div className='wrapper-link'>
-                  <img className='image-header' src={vacanciesIcon} />
+                  <img className='image-header' src={vacanciesIcon} alt='icon vacancies'/>
                   <span className='name-link'>Вакансии</span>
                 </div>
               </NavLink>
@@ -53,7 +53,7 @@ const Header = () => {
             <li className='header-link'>
               <NavLink to='/messages' activeClassName={'active'}>
                 <div className='wrapper-link'>
-                  <img className='image-header' src={messagesIcon} />
+                  <img className='image-header' src={messagesIcon} alt='icon maessage'/>
                   <span className='name-link'>Сообщения</span>
                 </div>
               </NavLink>
@@ -61,7 +61,7 @@ const Header = () => {
             <li className='header-link'>
               <NavLink to='/notifications' activeClassName={'active'}>
                 <div className='wrapper-link'>
-                  <img className='image-header' src={notifitationsIcon} />
+                  <img className='image-header' src={notifitationsIcon} alt='icon notifications'/>
                   <span className='name-link'>Уведомления</span>
                 </div>
               </NavLink>
