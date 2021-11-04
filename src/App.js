@@ -7,16 +7,18 @@ const FriendsPage = React.lazy(() => import('./pages/friends-page/FriendsPage'))
 
 function App () {
   return (
+    <div className='app-container'>
       <BrowserRouter>
         <Header />
         <React.Suspense fallback={<div>Загрузка...</div>}>
-        <Switch>
-          <Route exact path='/' component={MainPage}/>
-          <Route path='/mynetwork' component={FriendsPage}/>
-          <Route></Route>
-        </Switch>
+          <Switch>
+            <Route exact path='/' component={MainPage} />
+            <Route path='/mynetwork' component={FriendsPage} />
+            <Route></Route>
+          </Switch>
         </React.Suspense>
       </BrowserRouter>
+    </div>
   )
 }
 
