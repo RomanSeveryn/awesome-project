@@ -9,5 +9,8 @@ export const Action = [
   },
   {
     type: ActionTypes.FETCH_USERS
+  },
+  {
+    type: ActionTypes.REMOVE_USER
   }
 ]

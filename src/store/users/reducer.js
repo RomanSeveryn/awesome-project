@@ -28,6 +28,13 @@ export const usersReducer = (state = initialState, action = Action) => {
         users: action.payload
       }
     }
+
+    case ActionTypes.REMOVE_USER: {
+      return {
+        ...state,
+        users: action.payload
+      }
+    }
     default:
       return state
   }
