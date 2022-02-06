@@ -1,11 +1,13 @@
 .listContainer {
   width: 760px;
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 .listWrapper {
+  display: flex;
+  justify-content: center;
   padding-top: 10rem;
 }
