@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import UserCard from '../user-card/UserCard'
 import { loadUsers, removeUser } from '../../store/users/action'
+import NavBarFriends from "../navbar-friends/NavBarFriends";
 import './style.css'
 
 const ListUser = () => {
@@ -20,6 +21,7 @@ const ListUser = () => {
 
   return (
     <div className='listWrapper'>
+        <NavBarFriends/>
       <div className='listContainer'>
         {users.users.map(user => (
           <UserCard
