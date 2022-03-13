@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { dataNavBarPageFriends } from "../../utils/testData";
+import { IconArrowDown, IconArrowUp } from "../assets/svg/icons";
 import './style.css'
 
 const NavBarFriends = () => {
@@ -10,17 +11,27 @@ const NavBarFriends = () => {
 
     return (
         <div className='containerNavBarFriends'>
-            <p>Управлять своей сетью контактов</p>
+            <p className='paddingLeft'>Управлять своей сетью контактов</p>
             <ul className='listContainerFriends'>
                 {
                     dataNavBarPageFriends.map((elem) =>
-                        <li key={elem.id} className={`list ${state ? elem.id !== 1 ? 'hiddenList' : '' : ''}`}>
-                            <a href={`/mynetwork/${elem.item}`}>{elem.item}</a>
-                        </li>
+                        <div key={elem.id} className={`linkWrapper hoverClass ${state && elem.id !== 1 ? 'hiddenList' : ''}`}>
+                            <li  className='list'>
+                                <img className='listImage' src={elem.image} alt={`icon ${elem.item}`}/>
+                                <a className='linkFriends' href={`/mynetwork/${elem.item}`}>{elem.item}</a>
+                            </li>
+                            <span>{elem.count}</span>
+                        </div>
                     )
                 }
             </ul>
-            <button className='buttonList' onClick={toggleList}>Свернуть</button>
+            <button className='buttonList hoverClass' onClick={toggleList}>
+                <span style={{marginRight: '12px'}}>{state ? 'Развернуть' : 'Свернуть'}</span>
+                <div>
+                    {state ? <IconArrowDown/> : <IconArrowUp/>}
+                </div>
+            </button>
+            <hr className='borderNavBarFriends'/>
         </div>
     )
 }
