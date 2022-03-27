@@ -17,7 +17,7 @@ const Header = () => {
           <div className='container-header-input'>
             <div className='link-linkedin'>
               <Link to='/'>
-                <img src={linkedinIcon} alt='icon logo'/>
+                <img src={linkedinIcon} alt='icon logo' className='link-linkedin-logo'/>
               </Link>
             </div>
 

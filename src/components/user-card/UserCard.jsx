@@ -7,7 +7,7 @@ const UserCard = props => {
 
   return (
     <div className='container'>
-        <button className='deleteButton' onClick={props.deleteUser}>X</button>
+        <button className='deleteButton' onClick={props.deleteUser}>х</button>
         <img className='card-header' src={headerCard} alt='background card'/>
       <div className=''>
         <img className='img' src={photoUser} alt='user' />

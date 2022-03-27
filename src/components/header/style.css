@@ -5,8 +5,9 @@
 }
 .header {
   display: flex;
+  align-items: center;
   min-width: 100%;
-  min-height: 54px;
+  height: 54px;
   position: fixed;
   background-color: antiquewhite;
   z-index: 1;
@@ -48,7 +49,12 @@ a {
 }
 
 .image-header {
-  width: 32px;
+  width: 18px;
+}
+
+.link-linkedin-logo {
+  display: flex;
+  width: 22px;
 }
 
 .active {
@@ -61,8 +67,7 @@ a {
   height: 22px;
   background-color: #EEF3F8;
   margin-left: 8px;
-  font-size: 14px;
   border: none;
   outline: none;
-  padding: 7px;
+  padding: 3px;
 }
