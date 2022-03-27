@@ -1,6 +1,7 @@
 .containerNavBarFriends {
-    width: 270px;
-    height: 1200px;
+    width: 250px;
+    height: 1000px;
+    font-size: 14px;
     margin-right: 18px;
     background-color: white;
 }
@@ -19,7 +20,7 @@
 .linkWrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 4px 15px;
+    padding: 0 15px 4px 18px;
 }
 
 .hoverClass:hover {
@@ -27,13 +28,13 @@
 }
 
 .linkFriends {
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px;
 }
 
 .listImage {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .buttonList {
@@ -61,4 +62,50 @@
     display: block;
     height: 1px;
     width: 100%;
+}
+
+.containerAddContacts {
+    display: flex;
+    flex-direction: column;
+}
+.navBarAdsImg {
+    width: 100%;
+}
+
+.addContactsHeading {
+    display: flex;
+    justify-content: center;
+}
+
+.contactsParagraph {
+    text-align: center;
+    font-size: 11px;
+}
+
+.navBarInput {
+    display: flex;
+    width: 222px;
+    margin: 0 auto;
+}
+
+.contactsParagraphLink {
+    color: #0a66c2;
+}
+
+.contactsParagraphLink:hover {
+    text-decoration: underline;
+}
+
+.navBarButton {
+    width: 100px;
+    margin: 11px auto;
+    border-radius: 50px;
+    border-color: #0a66c2;
+    background: white;
+    color: #0a66c2;
+}
+
+.navBarLinkMore {
+    display: flex;
+    justify-content: center;
 }
