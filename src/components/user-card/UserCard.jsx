@@ -1,5 +1,4 @@
 import React from 'react'
-import photoUser from '../assets/image/photo.jpg'
 import headerCard from '../assets/image/background_user_card.svg'
 import './style.css'
 
@@ -10,7 +9,7 @@ const UserCard = props => {
         <button className='deleteButton' onClick={props.deleteUser}>х</button>
         <img className='card-header' src={headerCard} alt='background card'/>
       <div className=''>
-        <img className='img' src={photoUser} alt='user' />
+        <img className='img' src={props.photoUser} alt='user' />
       </div>
       <div className='name'>
         <h4 className=''>{props.name}</h4>
