@@ -1,0 +1,55 @@
+.containerAddContacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.addContactsHeading {
+    display: flex;
+    justify-content: center;
+}
+
+.contactsParagraph {
+    text-align: center;
+    font-size: 11px;
+}
+
+.contactsParagraphLink {
+    color: #0a66c2;
+}
+
+.navBarInput {
+    display: flex;
+    width: 222px;
+    margin: 0 auto;
+}
+
+.navBarButton {
+    width: 100px;
+    margin: 11px auto;
+    border-radius: 50px;
+    border-color: #0a66c2;
+    padding: 2px 0;
+    background: white;
+    color: #0a66c2;
+}
+
+.navBarInput {
+    display: flex;
+    width: 222px;
+    margin: 0 auto;
+}
+
+.navBarButton {
+    width: 100px;
+    margin: 11px auto;
+    border-radius: 50px;
+    border-color: #0a66c2;
+    padding: 2px 0;
+    background: white;
+    color: #0a66c2;
+}
+
+.navBarLinkMore {
+    display: flex;
+    justify-content: center;
+}
