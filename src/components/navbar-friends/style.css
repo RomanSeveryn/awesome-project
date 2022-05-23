@@ -6,27 +6,6 @@
     background-color: white;
 }
 
-.listContainerFriends {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-.list {
-    display: flex;
-    list-style-type: none;
-    color: rgba(0,0,0,.75)
-}
-.linkWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px 4px 18px;
-}
-
-.hoverClass:hover {
-    background-color: #f3f6f8;
-}
-
 .linkFriends {
     font-size: 12px;
     padding-left: 10px;
@@ -37,55 +16,12 @@
     height: 18px;
 }
 
-.buttonList {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin-left: 10px;
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-}
-.paddingLeft {
-    padding-left: 10px;
-}
-.hiddenList {
-    display: none;
-}
-
 .borderNavBarFriends {
     border: 0;
     border-top: 1px solid rgba(0,0,0,0.08);
     display: block;
     height: 1px;
     width: 100%;
-}
-
-.containerAddContacts {
-    display: flex;
-    flex-direction: column;
-}
-.navBarAdsImg {
-    width: 100%;
-}
-
-.addContactsHeading {
-    display: flex;
-    justify-content: center;
-}
-
-.contactsParagraph {
-    text-align: center;
-    font-size: 11px;
-}
-
-.navBarInput {
-    display: flex;
-    width: 222px;
-    margin: 0 auto;
 }
 
 .contactsParagraphLink {
@@ -96,17 +32,3 @@
     text-decoration: underline;
 }
 
-.navBarButton {
-    width: 100px;
-    margin: 11px auto;
-    border-radius: 50px;
-    border-color: #0a66c2;
-    padding: 2px 0;
-    background: white;
-    color: #0a66c2;
-}
-
-.navBarLinkMore {
-    display: flex;
-    justify-content: center;
-}
