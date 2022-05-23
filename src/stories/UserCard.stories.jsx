@@ -8,5 +8,5 @@ export default {
 }
 
 export const Usercard = () => {
-  return <UserCard name='Roman Severyn' surName='Happy man' phrase='Good job' photoUser={photo} />
+  return <UserCard name='Roman Severyn' lastName='Happy man' userPhrase='Good job' userPhoto={photo} />
 }

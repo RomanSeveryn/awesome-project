@@ -26,10 +26,11 @@ const ListUser = () => {
         {users.users.map(user => (
           <UserCard
             name={user.name}
-            surName={user.username}
+            lastName={user.username}
             key={user.id}
-            phrase={user.company.catchPhrase}
-            deleteUser={() => deleteUserFunction(user.id)}
+            userPhrase={user.company.catchPhrase}
+            onDeleteUser={() => deleteUserFunction(user.id)}
+            userPhoto={`https://robohash.org/${user.name}`}
           />
         ))}
       </div>

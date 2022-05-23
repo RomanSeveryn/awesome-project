@@ -6,7 +6,7 @@
   margin: 5px;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+  box-shadow: rgb(0 0 0 / 8%) 0 0 0 1px;
   border-radius: 10px
 }
 
@@ -32,13 +32,13 @@
   justify-content: center;
 }
 
-.phrase {
+.userPhrase {
   font-size: 11px;
   padding: 0 7px 0 7px;
   text-align: center;
 }
 
-.surname {
+.lastName {
   display: flex;
   justify-content: center;
 }
