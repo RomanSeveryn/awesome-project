@@ -9,7 +9,7 @@ export const FindNewFriends = ({mainInformation, search, onChangeHandler, onClic
 
                 <p className='contactsParagraph'>
                     {mainInformation}
-                    <a className='contactsParagraphLink' href=''>Подробнее</a>
+                    <a className='contactsParagraphLink' href='/'>Подробнее</a>
                 </p>
 
                 <div>
@@ -19,7 +19,7 @@ export const FindNewFriends = ({mainInformation, search, onChangeHandler, onClic
                 <button className='navBarButton' onClick={onClick}>Продолжить</button>
 
                 <div className='navBarLinkMore'>
-                    <a href=''>Еще</a>
+                    <a href='/'>Еще</a>
                 </div>
             </div>
         </>
