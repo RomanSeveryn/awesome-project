@@ -2,20 +2,20 @@ import React from 'react'
 import headerCard from '../assets/image/background_user_card.svg'
 import './style.css'
 
-const UserCard = props => {
+const UserCard = ({name, lastName, userPhrase, userPhoto, onDeleteUser }) => {
 
   return (
     <div className='container'>
-        <button className='deleteButton' onClick={props.deleteUser}>х</button>
+        <button className='deleteButton' onClick={onDeleteUser}>х</button>
         <img className='card-header' src={headerCard} alt='background card'/>
       <div className=''>
-        <img className='img' src={props.photoUser} alt='user' />
+        <img className='img' src={userPhoto} alt='user' />
       </div>
       <div className='name'>
-        <h4 className=''>{props.name}</h4>
-        <h4 className='surname'>{props.surName}</h4>
+        <h4 className=''>{name}</h4>
+        <h4 className='lastName'>{lastName}</h4>
       </div>
-      <p className='phrase'>{props.phrase}</p>
+      <p className='userPhrase'>{userPhrase}</p>
     </div>
   )
 }
