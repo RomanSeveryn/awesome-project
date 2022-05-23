@@ -1,0 +1,60 @@
+.paddingLeft {
+    padding-left: 10px;
+}
+
+.listContainerFriends {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 4px 18px;
+}
+
+.hoverClass:hover {
+    background-color: #f3f6f8;
+}
+
+.hiddenList {
+    display: none;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    color: rgba(0,0,0,.75)
+}
+
+.listImage {
+    width: 18px;
+    height: 18px;
+}
+
+.linkFriends {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.buttonList {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.borderNavBarFriends {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    display: block;
+    height: 1px;
+    width: 100%;
+}
