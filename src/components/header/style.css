@@ -1,8 +1,8 @@
 .container-header-input {
   display: flex;
   align-items: center;
-  margin-left: 250px;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -30,6 +30,7 @@
 
 .wrapper-header {
   display: flex;
+  margin: 0 auto;
 }
 
 .wrapper-link {
