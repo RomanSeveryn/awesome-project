@@ -1,16 +1,16 @@
-import { ActionTypes } from "./action-types";
+import { ActionTypes } from './action-types';
 
 export const Action = [
   {
-    type: ActionTypes.START_LOADING
+    type: ActionTypes.START_LOADING,
   },
   {
-    type: ActionTypes.FINISH_LOADING
+    type: ActionTypes.FINISH_LOADING,
   },
   {
-    type: ActionTypes.FETCH_USERS
+    type: ActionTypes.FETCH_USERS,
   },
   {
-    type: ActionTypes.REMOVE_USER
-  }
-]
+    type: ActionTypes.REMOVE_USER,
+  },
+];
